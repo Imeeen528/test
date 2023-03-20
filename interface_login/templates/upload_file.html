@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Upload Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/c32535fc93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload_file.css') }}">
+    <link rel="stylesheet" href="static/upload_file.css">
+    <script src="static/upload_file.js"></script>    
+  </head>
+  <body>
+    <div class="container">
+      <input type="file" id="file-input" multiple />
+      <label for="file-input">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        &nbsp; Choose Files To Upload
+      </label>
+      <div id="num-of-files">No Files Choosen</div>
+      <ul id="files-list"></ul>
+    </div>
+    <script src="script_upload.js"></script>
+  </body>
+</html>
